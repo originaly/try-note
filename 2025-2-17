@@ -1,0 +1,15 @@
+回顾
+一，flexbox：
+css中用于一维布局的属性，。基本用法：在一个div元素上，设置display：flex，将其变成一个父容器，内部的子元素默认具有几个特性：
+1）子元素在主轴上横向排列，宽度无伸缩，并且溢出盒子时不会换行；
+2）交叉轴上，如果子元素没有设置高度，会自动伸缩到最大高度的子元素同高；
+属性主要分两部分：
+1）容器属性
+  1.1 方向属性：justify-content，align-items
+  1.2 子元素是否环绕：flex-wrap，flex-flow（flex-direction，flex-wrap简写）
+2）子元素属性
+  2.1 flex：1 （flex-grow，flex-shrink，flex-basis简写）
+
+二，css主题切换方案：
+1）定义全局变量，定义data-[主题]下全局变量，绑定事件，在js中修改data-[主题]，从而实现全局主题切换
+2）动态切换css文件
